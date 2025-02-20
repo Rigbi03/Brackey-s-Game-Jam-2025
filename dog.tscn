@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5uw45roccs3y"]
+
+[ext_resource type="PackedScene" uid="uid://fsarty67ux0t" path="res://models/Dog.blend" id="1_bigm2"]
+
+[node name="Dog2" instance=ExtResource("1_bigm2")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/1/rotation = Quaternion(0.0569878, 1.19016e-07, 6.79347e-09, 0.998375)
+bones/1/scale = Vector3(1.02095, 1.02095, 1.02095)
+bones/3/rotation = Quaternion(-0.0757978, 2.85882e-15, -1.80716e-08, 0.997123)
+bones/4/rotation = Quaternion(-0.167768, -7.54952e-15, -3.99989e-08, 0.985827)
+bones/5/rotation = Quaternion(-0.302475, 2.23639e-14, -7.21158e-08, 0.953157)
+bones/6/position = Vector3(0.34764, -0.0150386, -0.35087)
+bones/6/rotation = Quaternion(-0.927091, -0.0693603, -0.0667055, 0.362272)
+bones/7/rotation = Quaternion(-0.461703, -0.0326888, 0.0404511, 0.885509)
+bones/8/rotation = Quaternion(0.8582, 9.31323e-09, 0.0798963, 0.50706)
+bones/9/position = Vector3(0.39202, 2.35062, -0.430383)
+bones/9/rotation = Quaternion(-0.543475, -0.00551673, -0.0710926, 0.836391)
+bones/10/rotation = Quaternion(-0.407537, -0.00421309, 0.0471365, 0.911962)
+bones/11/rotation = Quaternion(0.751125, -0.0186298, 0.0535998, 0.657716)
+bones/12/position = Vector3(-0.34764, 0.00470215, -0.50761)
+bones/12/rotation = Quaternion(-0.596666, -0.0315769, 0.0200953, 0.801616)
+bones/13/rotation = Quaternion(-0.408497, -0.00939881, 0.0367936, 0.911969)
+bones/14/rotation = Quaternion(0.804404, 1.11759e-08, -0.074888, 0.589344)
+bones/15/position = Vector3(-0.39202, 2.36786, -0.245246)
+bones/15/rotation = Quaternion(-0.803004, -0.0219651, 0.0264286, 0.594982)
+bones/16/rotation = Quaternion(-0.42353, -0.0222458, 0.013538, 0.905508)
+bones/17/rotation = Quaternion(0.793829, 0.0196929, -0.0588864, 0.604963)
+
+[node name="CollisionShape3D" parent="Armature/Skeleton3D/Dog/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.218365, -0.975867, 0, 0.975867, 0.218365, 0, 1.00242, -1.70062)

@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1740056189
+Camera.gd::GDScript::-1::1740045724::0::1::::<>Camera3D<>::
+dog.tscn::PackedScene::4534762712380420680::1740056189::0::1::::<><>::uid://fsarty67ux0t::::res://models/Dog.blend
+icon.svg::CompressedTexture2D::3200976090681794690::1739800528::1739800541::1::::<><>::
+Level.tscn::PackedScene::5383235549274984470::1740056189::0::1::::<><>::uid://c0f7wjrc5lki7::::res://Player.tscn<>uid://b5uw45roccs3y::::res://dog.tscn
+player.gd::GDScript::-1::1740054381::0::1::::<>RigidBody3D<>::
+Player.tscn::PackedScene::6539867077444976656::1740056189::0::1::::<><>::res://player.gd
+rigid_body_3d.gd::GDScript::-1::1740055514::0::1::::<>RigidBody3D<>::
+::res://models/::1740056226
+Dog.blend::PackedScene::388134412730654273::1740056226::1740056232::1::::<><>::uid://bnextntjwje::::res://models/Untitled.002.png
+Untitled.002.png::CompressedTexture2D::2862079840410982::1740054778::1740056228::1::::<><>::
