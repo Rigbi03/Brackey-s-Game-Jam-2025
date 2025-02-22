@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://tpnct8m37qx7"]
+
+[ext_resource type="Script" path="res://Scripts/KillZone.gd" id="1_ag00u"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yknqf"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_myewk"]
+points = PackedVector3Array(1.01587, 0.015873, 1.01587, -1.01587, -0.015873, -1.01587, -1.01587, 0.015873, -1.01587, 1.01587, -0.015873, -1.01587, -1.01587, -0.015873, 1.01587, -1.01587, 0.015873, 1.01587, 1.01587, 0.015873, -1.01587, 1.01587, -0.015873, 1.01587)
+
+[node name="KillZone" type="MeshInstance3D"]
+transform = Transform3D(20, 0, 0, 0, 0.1, 0, 0, 0, 20, 0, -1.45565, 0)
+visible = false
+mesh = SubResource("PlaneMesh_yknqf")
+
+[node name="Area3D2" type="Area3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, -1.45565, 0)
+collision_mask = 2
+script = ExtResource("1_ag00u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0.0727827, 0)
+shape = SubResource("ConvexPolygonShape3D_myewk")
+
+[connection signal="body_entered" from="Area3D2" to="Area3D2" method="_on_body_entered"]

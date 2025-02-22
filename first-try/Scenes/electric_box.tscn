@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkxtphdqniebh"]
+
+[ext_resource type="PackedScene" uid="uid://b3injlkw84ed1" path="res://models/el box.blend" id="1_rjpb3"]
+[ext_resource type="Script" path="res://Scripts/Electrix_Box.gd" id="2_td53c"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gx3oc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oyw07"]
+
+[node name="ElectricBox" type="Node3D"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="ElectricBox" type="Area3D" parent="."]
+collision_mask = 2
+script = ExtResource("2_td53c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ElectricBox"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+shape = SubResource("SphereShape3D_gx3oc")
+
+[node name="el box" parent="ElectricBox/CollisionShape3D" instance=ExtResource("1_rjpb3")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="Timer" type="Timer" parent="ElectricBox"]
+process_callback = 0
+wait_time = 45.0
+one_shot = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_oyw07")
+
+[connection signal="body_entered" from="ElectricBox" to="ElectricBox" method="_on_body_entered"]
+[connection signal="timeout" from="ElectricBox/Timer" to="ElectricBox" method="_on_timer_timeout"]

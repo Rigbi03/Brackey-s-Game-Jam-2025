@@ -1,0 +1,7 @@
+res://Scenes/electric_box.tscn
+res://Scenes/Game.tscn
+res://Scripts/game_manager.gd
+res://Scenes/map.tscn
+res://Scenes/dog.tscn
+res://Scenes/Player.tscn
+res://Scenes/kill_zone.tscn
