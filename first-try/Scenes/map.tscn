@@ -1,36 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://bt4a04mliqw4k"]
+[gd_scene load_steps=2 format=3 uid="uid://mnt8m1r5k6d0"]
 
 [ext_resource type="PackedScene" uid="uid://cpb7e7g0tlyvd" path="res://models/map.blend" id="1_coikr"]
 
 [node name="map" instance=ExtResource("1_coikr")]
 
-[node name="Roof" parent="." index="8"]
-visible = false
-
 [node name="Samp lamp" parent="." index="26"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0
 
 [node name="Samp lamp_001" parent="." index="27"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0
 
 [node name="Samp lamp_002" parent="." index="28"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0
 
 [node name="Samp lamp_003" parent="." index="29"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0
 
 [node name="Samp lamp_004" parent="." index="30"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0
 
 [node name="Samp lamp_005" parent="." index="31"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0
 
 [node name="Samp lamp_006" parent="." index="32"]
-visible = false
-omni_range = 1.0
+omni_range = 2.0

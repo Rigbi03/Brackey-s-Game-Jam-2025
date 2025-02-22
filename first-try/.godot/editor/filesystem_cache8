@@ -1,18 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740239078
+::res://::1740239398
 icon.svg::CompressedTexture2D::3200976090681794690::1739800528::1739800541::1::::<><>::
-::res://models/::1740239237
+::res://models/::1740239498
 Dog.blend::PackedScene::388134412730654273::1740056226::1740227687::1::::<><>::uid://bnextntjwje::::res://models/Untitled.002.png
 el box.blend::PackedScene::4369029314891312840::1740172341::1740172346::1::::<><>::
-map.blend::PackedScene::5829690177832661973::1740239237::1740239243::1::::<><>::
+map.blend::PackedScene::5829690177832661973::1740239498::1740239503::1::::<><>::
 Untitled.002.png::CompressedTexture2D::2862079840410982::1740054778::1740227686::1::::<><>::
-::res://Scenes/::1740238832
+::res://Scenes/::1740239249
 dog.tscn::PackedScene::4534762712380420680::1740238832::0::1::::<><>::uid://bnextntjwje::::res://models/Untitled.002.png<>res://Scripts/dog.gd
 electric_box.tscn::PackedScene::3136970591230458505::1740238832::0::1::::<><>::uid://b3injlkw84ed1::::res://models/el box.blend<>res://Scripts/Electrix_Box.gd
-Game.tscn::PackedScene::5383235549274984470::1740238832::0::1::::<><>::res://Scripts/game_manager.gd<>uid://c0f7wjrc5lki7::::res://Scenes/Player.tscn<>uid://b5uw45roccs3y::::res://Scenes/dog.tscn<>uid://bkxtphdqniebh::::res://Scenes/electric_box.tscn<>uid://tpnct8m37qx7::::res://Scenes/kill_zone.tscn<>uid://bt4a04mliqw4k::::res://Scenes/map.tscn
+Game.tscn::PackedScene::5383235549274984470::1740239249::0::1::::<><>::res://Scripts/game_manager.gd<>uid://c0f7wjrc5lki7::::res://Scenes/Player.tscn<>uid://b5uw45roccs3y::::res://Scenes/dog.tscn<>uid://bkxtphdqniebh::::res://Scenes/electric_box.tscn<>uid://tpnct8m37qx7::::res://Scenes/kill_zone.tscn<>uid://bt4a04mliqw4k::::res://Scenes/map.tscn
 kill_zone.tscn::PackedScene::1365347637433403758::1740238832::0::1::::<><>::res://Scripts/KillZone.gd
-Player.tscn::PackedScene::6539867077444976656::1740238831::0::1::::<><>::res://Scripts/player.gd
 map.tscn::PackedScene::3779921854757015068::1740238832::0::1::::<><>::uid://cpb7e7g0tlyvd::::res://models/map.blend
+Player.tscn::PackedScene::6539867077444976656::1740238831::0::1::::<><>::res://Scripts/player.gd
 ::res://Scripts/::1740236920
 Camera.gd::GDScript::-1::1740045724::0::1::::<>Camera3D<>::
 dog.gd::GDScript::-1::1740229257::0::1::::<>CharacterBody3D<>::

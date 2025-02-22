@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b5uw45roccs3y" path="res://Scenes/dog.tscn" id="2_sa5nt"]
 [ext_resource type="PackedScene" uid="uid://bkxtphdqniebh" path="res://Scenes/electric_box.tscn" id="4_cg7i6"]
 [ext_resource type="PackedScene" uid="uid://tpnct8m37qx7" path="res://Scenes/kill_zone.tscn" id="4_l5cpi"]
-[ext_resource type="PackedScene" uid="uid://bt4a04mliqw4k" path="res://Scenes/map.tscn" id="6_42rl4"]
+[ext_resource type="PackedScene" uid="uid://mnt8m1r5k6d0" path="res://Scenes/map.tscn" id="6_42rl4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i0di8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -70,4 +70,4 @@ skeleton = NodePath("../..")
 shape = SubResource("ConvexPolygonShape3D_xudbt")
 
 [node name="map" parent="." instance=ExtResource("6_42rl4")]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -20)
